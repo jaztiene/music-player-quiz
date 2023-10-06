@@ -1,0 +1,112 @@
+
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url(media/bg.png);
+        background-size: cover;
+        font-weight: bold;
+    }
+    
+    .player {
+        height: 95vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .wrapper {
+        padding: 30px;
+        border-radius: 20px;
+        background-color: rgba(221, 221, 221, 0.4); /* 70% transparent gray */
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+        text-align: center;
+    }
+    
+    
+    .art-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .track-art {
+        height: 250px;
+        width: 250px;
+        background-image: url('media/ts.jpg');
+        background-size: cover;
+        background-position: center;
+        border-radius: 0%;
+        box-shadow: 0px 6px 5px black;
+    }
+    
+    .background-vinyl {
+        height: 250px;
+        width: 250px;
+        background-image: url('media/vinyl.png');
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        box-shadow: 0px 6px 5px black;
+        margin-left: 20px; /* Adjust the margin to move it to the side of track art */
+    }
+    
+    
+    
+    
+    .track-name {
+        font-size: 2.5rem;
+    }
+    
+    .track-artist {
+        font-size: 1.5rem;
+    }
+    
+    .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        gap: 15px;
+    }
+    
+    .buttons i {
+        font-size: 5rem;
+        cursor: pointer;
+        color: #971e58;
+    }
+    
+    .buttons i.playpause-track {
+        font-size: 8rem;
+        color: #3774FF;
+    }
+    
+    .buttons i.fa-step-backward,
+    .buttons i.fa-step-forward {
+        color: #971e58;
+    }
+    
+    .current-time,
+    .total-duration {
+        font-size: 1rem;
+       
+        margin-bottom: 5px; /* Add some spacing between the time elements and the slider */
+    }
+    
+    .slider_container {
+        display: flex;
+        flex-direction: column; /* Display the slider and time elements in a column layout */
+        align-items: center;
+        margin-top: 10px; /* Add margin at the top to center the slider */
+    }
+    
+    .seek_slider {
+        width: 60%; /* Adjust the width of the slider as needed */
+        margin-top: 5px; /* Add some spacing between the time elements and the slider */
+    }
+    
